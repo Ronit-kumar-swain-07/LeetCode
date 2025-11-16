@@ -21,7 +21,7 @@ Example 3:
 
 Input: s = "111111"
 Output: 21
-Explanation: Each substring contains only 1's characters.
+Explanation: Each substring contains Only 1's characters.
 
 Constraints:
 
