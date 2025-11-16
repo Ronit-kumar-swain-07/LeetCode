@@ -46,7 +46,6 @@ class Solution {
                 one = 0;
             }
         }
-
         return (int)res;
     }
 }
