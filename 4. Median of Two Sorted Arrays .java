@@ -29,7 +29,7 @@ nums2.length == n
 
 
 //Code
-
+import java.util.*;
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n = nums1.length, m = nums2.length;
@@ -54,6 +54,32 @@ class Solution {
         }
         else {
             return (double)(res[x/2] + res[(x/2)-1]) / 2;
+        }
+    }
+}
+
+// Running Time : 5ms
+
+class solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+
+        ArrayList<Integer> res = new ArrayList<>();
+        for(int a : nums1) {
+            res.add(a);
+        }
+        for(int a : nums2){
+            res.add(a);
+        }
+
+        Collections.sort(res);
+
+        int x = res.size();
+
+        if(x % 2 != 0) {
+            return res.get(x/2);
+        }
+        else {
+            return (double)((res.get(x/2) + res.get((x/2)-1)) / 2.0);
         }
     }
 }
