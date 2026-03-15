@@ -24,7 +24,6 @@ Output: 21
 Explanation: Each substring contains Only 1's characters.
 
 Constraints:
-
 1 <= s.length <= 105
 s[i] is either '0' or '1'.
 
