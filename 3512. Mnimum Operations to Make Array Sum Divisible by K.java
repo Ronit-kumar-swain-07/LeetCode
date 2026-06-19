@@ -47,6 +47,6 @@ class Solution {
         for(int x : nums) {
             sum += x;
         }
-        return sum % k;
+        return sum % k;      
     }
 }
