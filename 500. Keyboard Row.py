@@ -36,6 +36,15 @@ from typing import List
 class Solution:
     def findWords(self, words: List[str]) -> List[str]:
         res = []
-        
-        
+
+        r1 = set("qwertyuiop")
+        r2 = set("asdfghjkl")
+        r3 = set("zxcvbnm")
+
+        for i in words:
+            w = set(i.lower())
+
+            if w <= r1 or w <= r2 or w <= r3:
+                res.append(i)
+
         return res
